@@ -1,0 +1,6 @@
+framework module Pods_Plinder {
+  umbrella header "Pods-Plinder-umbrella.h"
+
+  export *
+  module * { export * }
+}

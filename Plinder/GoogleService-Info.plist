@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>515031395325-32a5uoa1j05bnie89g64otd87qn32lon.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.515031395325-32a5uoa1j05bnie89g64otd87qn32lon</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBfwbblsmOgaJ7ultPapNB6mlmQoFsxfnM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>515031395325</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.PatricioPerez.Plinder</string>
+	<key>PROJECT_ID</key>
+	<string>plinder-f345a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>plinder-f345a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:515031395325:ios:e3f0e3e6b028b2d61dc794</string>
+	<key>DATABASE_URL</key>
+	<string>https://plinder-f345a.firebaseio.com</string>
+</dict>
+</plist>

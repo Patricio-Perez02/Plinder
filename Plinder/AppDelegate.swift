@@ -18,11 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions:
         [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
-        
         loginView()
-
-        
-        
         return true
       }
     
@@ -30,8 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         
         let lv = HomeViewController()
-        window?.rootViewController = lv
+        let navigationController = UINavigationController(rootViewController: lv)
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
+        navigationController.navigationBar.isHidden = true
     }
     
 

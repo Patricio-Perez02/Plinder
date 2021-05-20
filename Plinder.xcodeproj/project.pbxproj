@@ -9,24 +9,20 @@
 /* Begin PBXBuildFile section */
 		8E9BDD53F489676DF17BF4AF /* Pods_PlinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44493DF4CEEE400AF694BDD /* Pods_PlinderTests.framework */; };
 		D40000A15955827BE73F5D26 /* Pods_Plinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F4C5A0C2B30605008FA827 /* Pods_Plinder.framework */; };
+		F713F62F25ADD8E10083F3D9 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F713F62E25ADD8E10083F3D9 /* TutorialViewController.swift */; };
+		F713F64025ADF2280083F3D9 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F713F63F25ADF2280083F3D9 /* PageCell.swift */; };
+		F713F66425AE336A0083F3D9 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = F713F66325AE336A0083F3D9 /* Page.swift */; };
 		F724510B24C73A1400D16BE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724510A24C73A1400D16BE4 /* AppDelegate.swift */; };
 		F724511424C73A1B00D16BE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F724511324C73A1B00D16BE4 /* Assets.xcassets */; };
-		F724511724C73A1B00D16BE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F724511524C73A1B00D16BE4 /* LaunchScreen.storyboard */; };
 		F724512224C73A1C00D16BE4 /* PlinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724512124C73A1C00D16BE4 /* PlinderTests.swift */; };
-		F724513624C7460100D16BE4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724513424C7460100D16BE4 /* LoginViewController.swift */; };
-		F724513724C7460100D16BE4 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F724513524C7460100D16BE4 /* LoginViewController.xib */; };
 		F724513B24C7674500D16BE4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F724513A24C7674500D16BE4 /* GoogleService-Info.plist */; };
-		F724513E24C780D800D16BE4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724513C24C780D800D16BE4 /* SignUpViewController.swift */; };
-		F724513F24C780D800D16BE4 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F724513D24C780D800D16BE4 /* SignUpViewController.xib */; };
-		F74ECFFB24D490EC002DE35B /* DetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74ECFFA24D490EC002DE35B /* DetailService.swift */; };
-		F74ECFFD24D49B50002DE35B /* DetailFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74ECFFC24D49B50002DE35B /* DetailFilm.swift */; };
-		F751EEF824CF57A200135570 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F751EEF624CF57A200135570 /* HomeViewController.swift */; };
-		F751EEF924CF57A200135570 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F751EEF724CF57A200135570 /* HomeViewController.xib */; };
+		F727A34426531472002D61FA /* AnimatedProfile.json in Resources */ = {isa = PBXBuildFile; fileRef = F727A34326531472002D61FA /* AnimatedProfile.json */; };
+		F7360A6E25AF3B720085BB9A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7360A6D25AF3B720085BB9A /* SignupViewController.swift */; };
 		F78E423524CA037C00B13A71 /* ExtensionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78E423424CA037C00B13A71 /* ExtensionUtil.swift */; };
-		F7B6660724D06A77003940DE /* MyCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B6660524D06A77003940DE /* MyCellView.swift */; };
-		F7B6660824D06A77003940DE /* MyCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7B6660624D06A77003940DE /* MyCellView.xib */; };
-		F7D40ED224D4E4B200BDE095 /* HomeFilms.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D40ED124D4E4B200BDE095 /* HomeFilms.swift */; };
-		F7D40ED424D4E4C900BDE095 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D40ED324D4E4C900BDE095 /* HomeService.swift */; };
+		F7AC9BD4262B0E9A0012B2CF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AC9BD3262B0E9A0012B2CF /* HomeViewController.swift */; };
+		F7C035652652CA4800CD0459 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C035642652CA4800CD0459 /* LoginViewController.swift */; };
+		F7C30ADC262F615A00E4D5FE /* HomeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C30ADB262F615A00E4D5FE /* HomeTableCell.swift */; };
+		F7C30B1D262F6CFE00E4D5FE /* HomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C30B1C262F6CFE00E4D5FE /* HomeCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,29 +41,25 @@
 		99F4C5A0C2B30605008FA827 /* Pods_Plinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A44493DF4CEEE400AF694BDD /* Pods_PlinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76994C64CA02EF13C896543 /* Pods-PlinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlinderTests.debug.xcconfig"; path = "Target Support Files/Pods-PlinderTests/Pods-PlinderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F713F62E25ADD8E10083F3D9 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TutorialViewController.swift; path = "../New Group/TutorialViewController.swift"; sourceTree = "<group>"; };
+		F713F63F25ADF2280083F3D9 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		F713F66325AE336A0083F3D9 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		F724510724C73A1400D16BE4 /* Plinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F724510A24C73A1400D16BE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F724511324C73A1B00D16BE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F724511624C73A1B00D16BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F724511824C73A1B00D16BE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F724511D24C73A1C00D16BE4 /* PlinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F724512124C73A1C00D16BE4 /* PlinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlinderTests.swift; sourceTree = "<group>"; };
 		F724512324C73A1C00D16BE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F724512E24C73F3200D16BE4 /* Plinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Plinder.entitlements; sourceTree = "<group>"; };
-		F724513424C7460100D16BE4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		F724513524C7460100D16BE4 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		F724513A24C7674500D16BE4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		F724513C24C780D800D16BE4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		F724513D24C780D800D16BE4 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
-		F74ECFFA24D490EC002DE35B /* DetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailService.swift; sourceTree = "<group>"; };
-		F74ECFFC24D49B50002DE35B /* DetailFilm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFilm.swift; sourceTree = "<group>"; };
-		F751EEF624CF57A200135570 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		F751EEF724CF57A200135570 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		F727A34326531472002D61FA /* AnimatedProfile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AnimatedProfile.json; sourceTree = "<group>"; };
+		F7360A6D25AF3B720085BB9A /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		F78E423424CA037C00B13A71 /* ExtensionUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUtil.swift; sourceTree = "<group>"; };
-		F7B6660524D06A77003940DE /* MyCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCellView.swift; sourceTree = "<group>"; };
-		F7B6660624D06A77003940DE /* MyCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCellView.xib; sourceTree = "<group>"; };
-		F7D40ED124D4E4B200BDE095 /* HomeFilms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilms.swift; sourceTree = "<group>"; };
-		F7D40ED324D4E4C900BDE095 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		F7AC9BD3262B0E9A0012B2CF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F7C035642652CA4800CD0459 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F7C30ADB262F615A00E4D5FE /* HomeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableCell.swift; sourceTree = "<group>"; };
+		F7C30B1C262F6CFE00E4D5FE /* HomeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionCell.swift; sourceTree = "<group>"; };
 		FFFB92C91D989752AF6531C3 /* Pods-Plinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plinder.debug.xcconfig"; path = "Target Support Files/Pods-Plinder/Pods-Plinder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,11 +103,30 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F713F62B25ADD82B0083F3D9 /* ViewControllersOriginal */ = {
+			isa = PBXGroup;
+			children = (
+				F7AC9BD2262B0E610012B2CF /* Home */,
+				F7360A6B25AF3B020085BB9A /* User */,
+				F713F63625ADF1860083F3D9 /* Tutorial */,
+			);
+			path = ViewControllersOriginal;
+			sourceTree = "<group>";
+		};
+		F713F63625ADF1860083F3D9 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				F713F62E25ADD8E10083F3D9 /* TutorialViewController.swift */,
+				F713F63F25ADF2280083F3D9 /* PageCell.swift */,
+				F713F66325AE336A0083F3D9 /* Page.swift */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
 		F72450FE24C73A1400D16BE4 = {
 			isa = PBXGroup;
 			children = (
 				F724510924C73A1400D16BE4 /* Plinder */,
-				F724511324C73A1B00D16BE4 /* Assets.xcassets */,
 				F724512024C73A1C00D16BE4 /* PlinderTests */,
 				F724510824C73A1400D16BE4 /* Products */,
 				DDB5001E7C4946B9B4A6B9BB /* Pods */,
@@ -138,9 +149,9 @@
 				F724512E24C73F3200D16BE4 /* Plinder.entitlements */,
 				F724513A24C7674500D16BE4 /* GoogleService-Info.plist */,
 				F724510A24C73A1400D16BE4 /* AppDelegate.swift */,
-				F724513324C743EC00D16BE4 /* Controllers */,
-				F724513024C7439600D16BE4 /* Views */,
+				F713F62B25ADD82B0083F3D9 /* ViewControllersOriginal */,
 				F724512F24C7436000D16BE4 /* Supporting File */,
+				F7C0356C265313E200CD0459 /* Assets */,
 			);
 			path = Plinder;
 			sourceTree = "<group>";
@@ -162,56 +173,49 @@
 			path = "Supporting File";
 			sourceTree = "<group>";
 		};
-		F724513024C7439600D16BE4 /* Views */ = {
+		F7360A6B25AF3B020085BB9A /* User */ = {
 			isa = PBXGroup;
 			children = (
-				F724513124C743A700D16BE4 /* Launch */,
-				F724513524C7460100D16BE4 /* LoginViewController.xib */,
-				F724513D24C780D800D16BE4 /* SignUpViewController.xib */,
-				F751EEF724CF57A200135570 /* HomeViewController.xib */,
-				F7B6660624D06A77003940DE /* MyCellView.xib */,
+				F7C035622652CA0C00CD0459 /* Singup */,
+				F7C035632652CA2800CD0459 /* Login */,
 			);
-			path = Views;
+			path = User;
 			sourceTree = "<group>";
 		};
-		F724513124C743A700D16BE4 /* Launch */ = {
+		F7AC9BD2262B0E610012B2CF /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				F724511524C73A1B00D16BE4 /* LaunchScreen.storyboard */,
+				F7AC9BD3262B0E9A0012B2CF /* HomeViewController.swift */,
+				F7C30ADB262F615A00E4D5FE /* HomeTableCell.swift */,
+				F7C30B1C262F6CFE00E4D5FE /* HomeCollectionCell.swift */,
 			);
-			path = Launch;
+			name = Home;
 			sourceTree = "<group>";
 		};
-		F724513324C743EC00D16BE4 /* Controllers */ = {
+		F7C035622652CA0C00CD0459 /* Singup */ = {
 			isa = PBXGroup;
 			children = (
-				F724513424C7460100D16BE4 /* LoginViewController.swift */,
-				F724513C24C780D800D16BE4 /* SignUpViewController.swift */,
+				F7360A6D25AF3B720085BB9A /* SignupViewController.swift */,
 				F78E423424CA037C00B13A71 /* ExtensionUtil.swift */,
-				F7D40ED624D4E5B900BDE095 /* Home */,
-				F7D40ED524D4E59E00BDE095 /* Detail */,
 			);
-			path = Controllers;
+			path = Singup;
 			sourceTree = "<group>";
 		};
-		F7D40ED524D4E59E00BDE095 /* Detail */ = {
+		F7C035632652CA2800CD0459 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				F74ECFFC24D49B50002DE35B /* DetailFilm.swift */,
-				F74ECFFA24D490EC002DE35B /* DetailService.swift */,
+				F7C035642652CA4800CD0459 /* LoginViewController.swift */,
 			);
-			path = Detail;
+			path = Login;
 			sourceTree = "<group>";
 		};
-		F7D40ED624D4E5B900BDE095 /* Home */ = {
+		F7C0356C265313E200CD0459 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				F751EEF624CF57A200135570 /* HomeViewController.swift */,
-				F7B6660524D06A77003940DE /* MyCellView.swift */,
-				F7D40ED324D4E4C900BDE095 /* HomeService.swift */,
-				F7D40ED124D4E4B200BDE095 /* HomeFilms.swift */,
+				F727A34326531472002D61FA /* AnimatedProfile.json */,
+				F724511324C73A1B00D16BE4 /* Assets.xcassets */,
 			);
-			path = Home;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,13 +302,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F724513F24C780D800D16BE4 /* SignUpViewController.xib in Resources */,
-				F724513724C7460100D16BE4 /* LoginViewController.xib in Resources */,
-				F7B6660824D06A77003940DE /* MyCellView.xib in Resources */,
 				F724513B24C7674500D16BE4 /* GoogleService-Info.plist in Resources */,
-				F724511724C73A1B00D16BE4 /* LaunchScreen.storyboard in Resources */,
+				F727A34426531472002D61FA /* AnimatedProfile.json in Resources */,
 				F724511424C73A1B00D16BE4 /* Assets.xcassets in Resources */,
-				F751EEF924CF57A200135570 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,16 +386,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F751EEF824CF57A200135570 /* HomeViewController.swift in Sources */,
-				F74ECFFB24D490EC002DE35B /* DetailService.swift in Sources */,
-				F724513E24C780D800D16BE4 /* SignUpViewController.swift in Sources */,
-				F7D40ED224D4E4B200BDE095 /* HomeFilms.swift in Sources */,
-				F7D40ED424D4E4C900BDE095 /* HomeService.swift in Sources */,
-				F7B6660724D06A77003940DE /* MyCellView.swift in Sources */,
+				F713F66425AE336A0083F3D9 /* Page.swift in Sources */,
+				F7C30B1D262F6CFE00E4D5FE /* HomeCollectionCell.swift in Sources */,
+				F713F64025ADF2280083F3D9 /* PageCell.swift in Sources */,
+				F7C30ADC262F615A00E4D5FE /* HomeTableCell.swift in Sources */,
 				F78E423524CA037C00B13A71 /* ExtensionUtil.swift in Sources */,
-				F74ECFFD24D49B50002DE35B /* DetailFilm.swift in Sources */,
-				F724513624C7460100D16BE4 /* LoginViewController.swift in Sources */,
+				F713F62F25ADD8E10083F3D9 /* TutorialViewController.swift in Sources */,
+				F7360A6E25AF3B720085BB9A /* SignupViewController.swift in Sources */,
+				F7AC9BD4262B0E9A0012B2CF /* HomeViewController.swift in Sources */,
 				F724510B24C73A1400D16BE4 /* AppDelegate.swift in Sources */,
+				F7C035652652CA4800CD0459 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,17 +416,6 @@
 			targetProxy = F724511E24C73A1C00D16BE4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F724511524C73A1B00D16BE4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F724511624C73A1B00D16BE4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F724512424C73A1C00D16BE4 /* Debug */ = {
@@ -551,6 +540,7 @@
 				CODE_SIGN_ENTITLEMENTS = Plinder/Plinder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Plinder/Supporting File/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -570,6 +560,7 @@
 				CODE_SIGN_ENTITLEMENTS = Plinder/Plinder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Plinder/Supporting File/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

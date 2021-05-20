@@ -17,5 +17,9 @@ pod 'Firebase/Core'
 pod 'Firebase/Firestore'
 pod 'Firebase/Database'
 pod 'Alamofire', '~> 5.2'
-
+pod 'EMTNeumorphicView'
+pod 'SketchKit'
+pod 'lottie-ios'
+pod 'JXPageControl'
+pod 'HGCircularSlider', '~> 2.2.1'
 end

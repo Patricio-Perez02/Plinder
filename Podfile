@@ -21,5 +21,5 @@ pod 'EMTNeumorphicView'
 pod 'SketchKit'
 pod 'lottie-ios'
 pod 'JXPageControl'
-pod 'HGCircularSlider', '~> 2.2.1'
+pod 'GoogleSignIn'
 end

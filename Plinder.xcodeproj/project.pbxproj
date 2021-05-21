@@ -230,6 +230,7 @@
 				F724510424C73A1400D16BE4 /* Frameworks */,
 				F724510524C73A1400D16BE4 /* Resources */,
 				65C331530025FB6BD2319AE0 /* [CP] Embed Pods Frameworks */,
+				66EF26554F74B35CA6D711AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -355,6 +356,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Plinder/Pods-Plinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66EF26554F74B35CA6D711AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Plinder/Pods-Plinder-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Plinder/Pods-Plinder-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Plinder/Pods-Plinder-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F1E728D2271E2F6E4D29BC8C /* [CP] Check Pods Manifest.lock */ = {

@@ -8,30 +8,35 @@
 
 import UIKit
 import Firebase
+import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
 
-      func application(_ application: UIApplication,
-        didFinishLaunchingWithOptions launchOptions:
-        [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        
+        GIDSignIn.sharedInstance()?.clientID = FirebaseApp.app()?.options.clientID
+        
         loginView()
         return true
-      }
+    }
     
     private func loginView () {
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let lv = HomeViewController()
+        let lv = TutorialViewController()
         let navigationController = UINavigationController(rootViewController: lv)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         navigationController.navigationBar.isHidden = true
     }
     
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url) ?? false
+    }
 
 }
 

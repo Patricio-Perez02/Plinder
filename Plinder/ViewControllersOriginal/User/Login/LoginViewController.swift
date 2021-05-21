@@ -9,6 +9,7 @@
 import UIKit
 import SketchKit
 import FirebaseAuth
+import GoogleSignIn
 
 class LoginViewController: UIViewController {
     
@@ -23,10 +24,17 @@ class LoginViewController: UIViewController {
     
     let buttonPassword = UIButton()
     
+    let buttonGoogle = UIButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureUI()
+        
+        // Google Auth
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        
+        GIDSignIn.sharedInstance()?.delegate = self
     }
     //MARK: ConfigureUI
     
@@ -43,6 +51,7 @@ class LoginViewController: UIViewController {
         view.addSubview(buttonReady)
         view.addSubview(labelOr)
         view.addSubview(buttonPassword)
+        view.addSubview(buttonGoogle)
         
         labelLogin.translatesAutoresizingMaskIntoConstraints = false
         lineEmail.translatesAutoresizingMaskIntoConstraints = false
@@ -53,6 +62,7 @@ class LoginViewController: UIViewController {
         buttonReady.translatesAutoresizingMaskIntoConstraints = false
         labelOr.translatesAutoresizingMaskIntoConstraints = false
         buttonPassword.translatesAutoresizingMaskIntoConstraints = false
+        buttonGoogle.translatesAutoresizingMaskIntoConstraints = false
         
         labelLogin.text = "Log In"
         labelLogin.font = UIFont.boldSystemFont(ofSize: 50)
@@ -152,16 +162,36 @@ class LoginViewController: UIViewController {
             button.heightAnchor(equalToConstant: 35)
         }
         
-        labelOr.text = " -----OR----- "
+        labelOr.text = " - OR - "
         labelOr.textAlignment = .center
         labelOr.textColor = .gray
         labelOr.font = UIFont.boldSystemFont(ofSize: 12)
         
         labelOr.layout.applyConstraint { label in
-            labelOr.topAnchor(equalTo: buttonReady.bottomAnchor, constant: 20)
-            labelOr.leadingAnchor(equalTo: view.leadingAnchor, constant: 20)
-            labelOr.trailingAnchor(equalTo:  view.trailingAnchor, constant: -20)
+            label.topAnchor(equalTo: buttonReady.bottomAnchor, constant: 20)
+            label.leadingAnchor(equalTo: view.leadingAnchor, constant: 20)
+            label.trailingAnchor(equalTo:  view.trailingAnchor, constant: -20)
         }
+        
+        buttonGoogle.setTitle("Sign In", for: .normal)
+        buttonGoogle.titleLabel?.font = UIFont.boldSystemFont(ofSize: 13)
+        buttonGoogle.setTitleColor(.gray, for: .normal)
+        buttonGoogle.backgroundColor = UIColor.white
+        buttonGoogle.layer.cornerRadius = 10
+        buttonGoogle.titleLabel?.textAlignment = .center
+        buttonGoogle.addTarget(self, action: #selector(loginWithGoogle), for: .touchUpInside)
+        
+        buttonGoogle.layout.applyConstraint { button in
+            button.topAnchor(equalTo: labelOr.bottomAnchor, constant: 20)
+            button.leadingAnchor(equalTo: buttonReady.leadingAnchor)
+            button.trailingAnchor(equalTo: buttonReady.trailingAnchor)
+            button.heightAnchor(equalToConstant: 35)
+        }
+    }
+    
+    @objc func loginWithGoogle () {
+        GIDSignIn.sharedInstance()?.signOut()
+        GIDSignIn.sharedInstance()?.signIn()
     }
     
     @objc func actionButton() {
@@ -171,12 +201,6 @@ class LoginViewController: UIViewController {
             buttonPassword.isSelected = true
             tFieldPassword.isSecureTextEntry = false
         }
-        /*if buttonPassword.isSelected == true {
-            buttonPassword.isSelected = false
-            buttonPassword.setImage(UIImage(named: "see_text"), for: .normal)
-            tFieldPassword.isSecureTextEntry = true
-        }*/
-        
     }
     
     @objc func loginUser() {
@@ -193,4 +217,23 @@ class LoginViewController: UIViewController {
             }
         }
     }
+}
+
+extension LoginViewController : GIDSignInDelegate {
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if error == nil && user.authentication != nil {
+            let credential = GoogleAuthProvider.credential(withIDToken: user.authentication.idToken, accessToken: user.authentication.accessToken)
+            Auth.auth().signIn(with: credential) { (result, error) in
+                if error == nil {
+                    let homeVC = HomeViewController()
+                    self.navigationController?.pushViewController(homeVC, animated: true)
+                } else {
+                    self.labelError.isHidden = false
+                    self.labelError.text = error!.localizedDescription
+                }
+            }
+        }
+    }
+    
 }

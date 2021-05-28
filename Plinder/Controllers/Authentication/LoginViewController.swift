@@ -10,6 +10,7 @@ import UIKit
 import SketchKit
 import FirebaseAuth
 import GoogleSignIn
+import FBSDKLoginKit
 
 class LoginViewController: UIViewController {
     
@@ -25,6 +26,8 @@ class LoginViewController: UIViewController {
     let buttonPassword = UIButton()
     
     let buttonGoogle = UIButton()
+    
+    let buttonFacebook = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +55,7 @@ class LoginViewController: UIViewController {
         view.addSubview(labelOr)
         view.addSubview(buttonPassword)
         view.addSubview(buttonGoogle)
+        view.addSubview(buttonFacebook)
         
         labelLogin.translatesAutoresizingMaskIntoConstraints = false
         lineEmail.translatesAutoresizingMaskIntoConstraints = false
@@ -63,6 +67,7 @@ class LoginViewController: UIViewController {
         labelOr.translatesAutoresizingMaskIntoConstraints = false
         buttonPassword.translatesAutoresizingMaskIntoConstraints = false
         buttonGoogle.translatesAutoresizingMaskIntoConstraints = false
+        buttonFacebook.translatesAutoresizingMaskIntoConstraints = false
         
         labelLogin.text = "Log In"
         labelLogin.font = UIFont.boldSystemFont(ofSize: 50)
@@ -187,9 +192,54 @@ class LoginViewController: UIViewController {
             button.trailingAnchor(equalTo: buttonReady.trailingAnchor)
             button.heightAnchor(equalToConstant: 35)
         }
+        
+        buttonFacebook.setTitle("Continue with Facebook", for: .normal)
+        buttonFacebook.titleLabel?.font = UIFont.boldSystemFont(ofSize: 13)
+        buttonFacebook.setTitleColor(.white, for: .normal)
+        buttonFacebook.backgroundColor = UIColor.systemBlue
+        buttonFacebook.layer.cornerRadius = 10
+        buttonFacebook.titleLabel?.textAlignment = .center
+        buttonFacebook.addTarget(self, action: #selector(loginWithFacebook), for: .touchUpInside)
+        
+        buttonFacebook.layout.applyConstraint { button in
+            button.topAnchor(equalTo: buttonGoogle.bottomAnchor, constant: 20)
+            button.leadingAnchor(equalTo: buttonGoogle.leadingAnchor)
+            button.trailingAnchor(equalTo: buttonGoogle.trailingAnchor)
+            button.heightAnchor(equalToConstant: 35)
+        }
     }
     
-    @objc func loginWithGoogle () {
+    @objc func loginWithFacebook() {
+        
+        let manager = LoginManager()
+        manager.logOut()
+        manager.logIn(permissions: [.email], viewController: self) { (result) in
+            
+            switch result {
+            
+            case .success(granted: let granted, declined: let declined, token: let token):
+                
+                let credential = FacebookAuthProvider.credential(withAccessToken: token!.tokenString)
+                Auth.auth().signIn(with: credential) { (result, error) in
+                    if error == nil {
+                        let homeVC = HomeViewController()
+                        self.navigationController?.pushViewController(homeVC, animated: true)
+                    } else {
+                        self.labelError.isHidden = false
+                        self.labelError.text = error!.localizedDescription
+                    }
+                }
+            case .cancelled:
+                break
+            case .failed(_):
+                break
+            }
+            
+        }
+        
+    }
+    
+    @objc func loginWithGoogle() {
         GIDSignIn.sharedInstance()?.signOut()
         GIDSignIn.sharedInstance()?.signIn()
     }

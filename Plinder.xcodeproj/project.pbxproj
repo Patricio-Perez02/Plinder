@@ -200,9 +200,9 @@
 		F796ADEC26613F2E0095A63E /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				F796ADE126613D300095A63E /* SignupViewController.swift */,
 				F796ADD926613CEB0095A63E /* LoginViewController.swift */,
 				F796ADDD26613CEF0095A63E /* ExtensionUtil.swift */,
-				F796ADE126613D300095A63E /* SignupViewController.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";

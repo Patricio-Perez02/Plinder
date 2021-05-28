@@ -7,12 +7,12 @@
 //
 
 import UIKit
+import SketchKit
 
 class HomeCollectionCell: UICollectionViewCell {
     
     let containerView = UIView()
-    let labelTitle = UILabel()
-    let labelDescription = UILabel()
+    let imageViewPoster = UIImageView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -20,40 +20,29 @@ class HomeCollectionCell: UICollectionViewCell {
         contentView.backgroundColor = UIColor.init(red: 40/255.0, green: 43/255.0, blue: 54/255.0, alpha: 1)
         
         contentView.addSubview(containerView)
-        containerView.addSubview(labelTitle)
-        containerView.addSubview(labelDescription)
+        contentView.addSubview(imageViewPoster)
         
         containerView.translatesAutoresizingMaskIntoConstraints = false
-        labelTitle.translatesAutoresizingMaskIntoConstraints = false
-        labelDescription.translatesAutoresizingMaskIntoConstraints = false
+        imageViewPoster.translatesAutoresizingMaskIntoConstraints = false
         
         containerView.backgroundColor = .black
         
-        let topConstraintContainer = containerView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 5)
-        let bottomConstraintContainer = containerView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -5)
-        let leadingConstraintContainer = containerView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 2.5)
-        let trailingConstraintContainer = containerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
-        NSLayoutConstraint.activate([topConstraintContainer, bottomConstraintContainer, leadingConstraintContainer, trailingConstraintContainer])
+        containerView.layout.applyConstraint { view in
+            view.topAnchor(equalTo: contentView.topAnchor, constant: 5)
+            view.bottomAnchor(equalTo: contentView.bottomAnchor, constant: -5)
+            view.leadingAnchor(equalTo: contentView.leadingAnchor, constant: 2.5)
+            view.trailingAnchor(equalTo: contentView.trailingAnchor)
+        }
         
-        labelTitle.text = "Title"
-        labelTitle.font = UIFont.init(name: "Avenir Next", size: 25)
-        labelTitle.textColor = .white
+        imageViewPoster.contentMode = .scaleAspectFill
         
-        let bottomConstraintLTitle = labelTitle.bottomAnchor.constraint(equalTo: labelDescription.topAnchor, constant: -2.5)
-        let leadingConstraintLTitle = labelTitle.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 5)
-        let trailingConstraintLTitle = labelTitle.trailingAnchor.constraint(equalTo: containerView.trailingAnchor)
-        NSLayoutConstraint.activate([bottomConstraintLTitle, leadingConstraintLTitle, trailingConstraintLTitle])
+        imageViewPoster.layout.applyConstraint { image in
+            image.topAnchor(equalTo: containerView.topAnchor)
+            image.bottomAnchor(equalTo: containerView.bottomAnchor)
+            image.leadingAnchor(equalTo: containerView.leadingAnchor)
+            image.trailingAnchor(equalTo: containerView.trailingAnchor)
+        }
         
-        labelDescription.text = "Description of the movie for the users"
-        labelDescription.font = UIFont.init(name: "Avenir", size: 13)
-        labelDescription.textColor = .white
-        labelDescription.lineBreakMode = .byTruncatingTail
-        labelDescription.numberOfLines = 0
-        
-        let bottomConstraintLDescription = labelDescription.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -5)
-        let leadingConstraintLDescription = labelDescription.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 7.5)
-        let trailingConstraintLDescription = labelDescription.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -2.5)
-        NSLayoutConstraint.activate([bottomConstraintLDescription, leadingConstraintLDescription, trailingConstraintLDescription])
     }
     
     required init?(coder: NSCoder) {

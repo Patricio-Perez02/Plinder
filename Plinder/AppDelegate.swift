@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func loginView () {
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let lv = TutorialViewController()
+        let lv = HomeViewController()
         let navigationController = UINavigationController(rootViewController: lv)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()

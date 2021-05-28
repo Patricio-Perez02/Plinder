@@ -373,6 +373,9 @@ PODS:
   - nanopb/decode (1.30905.0)
   - nanopb/encode (1.30905.0)
   - PromisesObjC (1.2.9)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
   - SketchKit (1.4.0)
 
 DEPENDENCIES:
@@ -386,6 +389,7 @@ DEPENDENCIES:
   - GoogleSignIn
   - JXPageControl
   - lottie-ios
+  - SDWebImage
   - SketchKit
 
 SPEC REPOS:
@@ -419,6 +423,7 @@ SPEC REPOS:
     - lottie-ios
     - nanopb
     - PromisesObjC
+    - SDWebImage
     - SketchKit
 
 SPEC CHECKSUMS:
@@ -451,8 +456,9 @@ SPEC CHECKSUMS:
   lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SketchKit: 72d4cdf0d1336e90edb7b42f39d9509691cd7596
 
-PODFILE CHECKSUM: edb73251003cd08afbf7c64f8379e3fc88cd74fb
+PODFILE CHECKSUM: ae3a2b42bac727a9427673ec36b00b2f3b3b14b1
 
 COCOAPODS: 1.10.1

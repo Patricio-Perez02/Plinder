@@ -8,6 +8,7 @@
 
 import UIKit
 import SketchKit
+import SDWebImage
 
 class HomeTableCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
@@ -16,6 +17,8 @@ class HomeTableCell: UITableViewCell, UICollectionViewDelegate, UICollectionView
     let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout.init())
     let labelGeners = UILabel()
 
+    var listMovies : ListMovies?
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -61,6 +64,17 @@ class HomeTableCell: UITableViewCell, UICollectionViewDelegate, UICollectionView
         let trailingConstraintCollection = collectionView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor)
         NSLayoutConstraint.activate([topConstraintCollection, bottomConstraintCollection, leadingConstraintCollection, trailingConstraintCollection])
         
+        let service = ServiceListMovies(baseUrl: "https://api.themoviedb.org/4/")
+        service.getListHome(type: "list/1?page=1&api_key=d274162456c2163d64d3db486d400f6e")
+        service.completionHandler {[weak self] (list, status, messages) in
+            if status{
+                guard let self = self else {return}
+                guard let listMovies = list else {return}
+                self.listMovies = listMovies
+                self.collectionView.reloadData()
+            }
+        }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -68,12 +82,16 @@ class HomeTableCell: UITableViewCell, UICollectionViewDelegate, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return listMovies?.results.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "homeCollectionCell", for: indexPath) as! HomeCollectionCell
-    
+        if let movies = listMovies {
+            let detailMovies = movies.results[indexPath.item]
+            cell.imageViewPoster.sd_setImage(with: URL(string: detailMovies.posterPath), placeholderImage: nil)
+        }
+        
         return cell
     }
     

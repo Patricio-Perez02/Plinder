@@ -19,6 +19,8 @@
 		F727A34426531472002D61FA /* AnimatedProfile.json in Resources */ = {isa = PBXBuildFile; fileRef = F727A34326531472002D61FA /* AnimatedProfile.json */; };
 		F7360A6E25AF3B720085BB9A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7360A6D25AF3B720085BB9A /* SignupViewController.swift */; };
 		F78E423524CA037C00B13A71 /* ExtensionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78E423424CA037C00B13A71 /* ExtensionUtil.swift */; };
+		F796AD06265FF91D0095A63E /* ListMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796AD05265FF91D0095A63E /* ListMovies.swift */; };
+		F796AD0A265FF9D90095A63E /* ServiceListMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796AD09265FF9D90095A63E /* ServiceListMovies.swift */; };
 		F7AC9BD4262B0E9A0012B2CF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AC9BD3262B0E9A0012B2CF /* HomeViewController.swift */; };
 		F7C035652652CA4800CD0459 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C035642652CA4800CD0459 /* LoginViewController.swift */; };
 		F7C30ADC262F615A00E4D5FE /* HomeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C30ADB262F615A00E4D5FE /* HomeTableCell.swift */; };
@@ -56,6 +58,8 @@
 		F727A34326531472002D61FA /* AnimatedProfile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AnimatedProfile.json; sourceTree = "<group>"; };
 		F7360A6D25AF3B720085BB9A /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		F78E423424CA037C00B13A71 /* ExtensionUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUtil.swift; sourceTree = "<group>"; };
+		F796AD05265FF91D0095A63E /* ListMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovies.swift; sourceTree = "<group>"; };
+		F796AD09265FF9D90095A63E /* ServiceListMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListMovies.swift; sourceTree = "<group>"; };
 		F7AC9BD3262B0E9A0012B2CF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F7C035642652CA4800CD0459 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F7C30ADB262F615A00E4D5FE /* HomeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableCell.swift; sourceTree = "<group>"; };
@@ -182,12 +186,22 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		F796AD0D265FFA8D0095A63E /* ServiceHome */ = {
+			isa = PBXGroup;
+			children = (
+				F796AD05265FF91D0095A63E /* ListMovies.swift */,
+				F796AD09265FF9D90095A63E /* ServiceListMovies.swift */,
+			);
+			name = ServiceHome;
+			sourceTree = "<group>";
+		};
 		F7AC9BD2262B0E610012B2CF /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				F7AC9BD3262B0E9A0012B2CF /* HomeViewController.swift */,
 				F7C30ADB262F615A00E4D5FE /* HomeTableCell.swift */,
 				F7C30B1C262F6CFE00E4D5FE /* HomeCollectionCell.swift */,
+				F796AD0D265FFA8D0095A63E /* ServiceHome */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -406,6 +420,7 @@
 			files = (
 				F713F66425AE336A0083F3D9 /* Page.swift in Sources */,
 				F7C30B1D262F6CFE00E4D5FE /* HomeCollectionCell.swift in Sources */,
+				F796AD0A265FF9D90095A63E /* ServiceListMovies.swift in Sources */,
 				F713F64025ADF2280083F3D9 /* PageCell.swift in Sources */,
 				F7C30ADC262F615A00E4D5FE /* HomeTableCell.swift in Sources */,
 				F78E423524CA037C00B13A71 /* ExtensionUtil.swift in Sources */,
@@ -414,6 +429,7 @@
 				F7AC9BD4262B0E9A0012B2CF /* HomeViewController.swift in Sources */,
 				F724510B24C73A1400D16BE4 /* AppDelegate.swift in Sources */,
 				F7C035652652CA4800CD0459 /* LoginViewController.swift in Sources */,
+				F796AD06265FF91D0095A63E /* ListMovies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

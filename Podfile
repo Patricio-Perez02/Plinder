@@ -22,4 +22,5 @@ pod 'SketchKit'
 pod 'lottie-ios'
 pod 'JXPageControl'
 pod 'GoogleSignIn'
+pod 'SDWebImage'
 end

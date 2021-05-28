@@ -107,14 +107,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		F713F62B25ADD82B0083F3D9 /* ViewControllersOriginal */ = {
+		F713F62B25ADD82B0083F3D9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				F7AC9BD2262B0E610012B2CF /* Home */,
 				F7360A6B25AF3B020085BB9A /* User */,
 				F713F63625ADF1860083F3D9 /* Tutorial */,
 			);
-			path = ViewControllersOriginal;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		F713F63625ADF1860083F3D9 /* Tutorial */ = {
@@ -153,7 +153,7 @@
 				F724512E24C73F3200D16BE4 /* Plinder.entitlements */,
 				F724513A24C7674500D16BE4 /* GoogleService-Info.plist */,
 				F724510A24C73A1400D16BE4 /* AppDelegate.swift */,
-				F713F62B25ADD82B0083F3D9 /* ViewControllersOriginal */,
+				F713F62B25ADD82B0083F3D9 /* ViewControllers */,
 				F724512F24C7436000D16BE4 /* Supporting File */,
 				F7C0356C265313E200CD0459 /* Assets */,
 			);

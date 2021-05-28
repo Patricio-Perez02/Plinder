@@ -23,4 +23,5 @@ pod 'lottie-ios'
 pod 'JXPageControl'
 pod 'GoogleSignIn'
 pod 'SDWebImage'
+pod 'FBSDKLoginKit'
 end

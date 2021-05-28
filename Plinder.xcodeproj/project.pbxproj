@@ -9,22 +9,22 @@
 /* Begin PBXBuildFile section */
 		8E9BDD53F489676DF17BF4AF /* Pods_PlinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44493DF4CEEE400AF694BDD /* Pods_PlinderTests.framework */; };
 		D40000A15955827BE73F5D26 /* Pods_Plinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F4C5A0C2B30605008FA827 /* Pods_Plinder.framework */; };
-		F713F62F25ADD8E10083F3D9 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F713F62E25ADD8E10083F3D9 /* TutorialViewController.swift */; };
-		F713F64025ADF2280083F3D9 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F713F63F25ADF2280083F3D9 /* PageCell.swift */; };
-		F713F66425AE336A0083F3D9 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = F713F66325AE336A0083F3D9 /* Page.swift */; };
 		F724510B24C73A1400D16BE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724510A24C73A1400D16BE4 /* AppDelegate.swift */; };
 		F724511424C73A1B00D16BE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F724511324C73A1B00D16BE4 /* Assets.xcassets */; };
 		F724512224C73A1C00D16BE4 /* PlinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724512124C73A1C00D16BE4 /* PlinderTests.swift */; };
 		F724513B24C7674500D16BE4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F724513A24C7674500D16BE4 /* GoogleService-Info.plist */; };
 		F727A34426531472002D61FA /* AnimatedProfile.json in Resources */ = {isa = PBXBuildFile; fileRef = F727A34326531472002D61FA /* AnimatedProfile.json */; };
-		F7360A6E25AF3B720085BB9A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7360A6D25AF3B720085BB9A /* SignupViewController.swift */; };
-		F78E423524CA037C00B13A71 /* ExtensionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78E423424CA037C00B13A71 /* ExtensionUtil.swift */; };
-		F796AD06265FF91D0095A63E /* ListMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796AD05265FF91D0095A63E /* ListMovies.swift */; };
-		F796AD0A265FF9D90095A63E /* ServiceListMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796AD09265FF9D90095A63E /* ServiceListMovies.swift */; };
-		F7AC9BD4262B0E9A0012B2CF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AC9BD3262B0E9A0012B2CF /* HomeViewController.swift */; };
-		F7C035652652CA4800CD0459 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C035642652CA4800CD0459 /* LoginViewController.swift */; };
-		F7C30ADC262F615A00E4D5FE /* HomeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C30ADB262F615A00E4D5FE /* HomeTableCell.swift */; };
-		F7C30B1D262F6CFE00E4D5FE /* HomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C30B1C262F6CFE00E4D5FE /* HomeCollectionCell.swift */; };
+		F796ADC226613CCB0095A63E /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796ADC126613CCB0095A63E /* TutorialViewController.swift */; };
+		F796ADC626613CD00095A63E /* HomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796ADC526613CD00095A63E /* HomeCollectionCell.swift */; };
+		F796ADC826613CD20095A63E /* HomeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796ADC726613CD20095A63E /* HomeTableCell.swift */; };
+		F796ADCA26613CD30095A63E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796ADC926613CD30095A63E /* HomeViewController.swift */; };
+		F796ADCC26613CD60095A63E /* ListMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796ADCB26613CD60095A63E /* ListMovies.swift */; };
+		F796ADD026613CDF0095A63E /* ServiceListMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796ADCF26613CDE0095A63E /* ServiceListMovies.swift */; };
+		F796ADD426613CE20095A63E /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796ADD326613CE20095A63E /* Page.swift */; };
+		F796ADD626613CE40095A63E /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796ADD526613CE40095A63E /* PageCell.swift */; };
+		F796ADDA26613CEB0095A63E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796ADD926613CEB0095A63E /* LoginViewController.swift */; };
+		F796ADDE26613CEF0095A63E /* ExtensionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796ADDD26613CEF0095A63E /* ExtensionUtil.swift */; };
+		F796ADE226613D300095A63E /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796ADE126613D300095A63E /* SignupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +43,6 @@
 		99F4C5A0C2B30605008FA827 /* Pods_Plinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A44493DF4CEEE400AF694BDD /* Pods_PlinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76994C64CA02EF13C896543 /* Pods-PlinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlinderTests.debug.xcconfig"; path = "Target Support Files/Pods-PlinderTests/Pods-PlinderTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F713F62E25ADD8E10083F3D9 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TutorialViewController.swift; path = "../New Group/TutorialViewController.swift"; sourceTree = "<group>"; };
-		F713F63F25ADF2280083F3D9 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
-		F713F66325AE336A0083F3D9 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		F724510724C73A1400D16BE4 /* Plinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F724510A24C73A1400D16BE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F724511324C73A1B00D16BE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,14 +53,17 @@
 		F724512E24C73F3200D16BE4 /* Plinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Plinder.entitlements; sourceTree = "<group>"; };
 		F724513A24C7674500D16BE4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F727A34326531472002D61FA /* AnimatedProfile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AnimatedProfile.json; sourceTree = "<group>"; };
-		F7360A6D25AF3B720085BB9A /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
-		F78E423424CA037C00B13A71 /* ExtensionUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUtil.swift; sourceTree = "<group>"; };
-		F796AD05265FF91D0095A63E /* ListMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovies.swift; sourceTree = "<group>"; };
-		F796AD09265FF9D90095A63E /* ServiceListMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListMovies.swift; sourceTree = "<group>"; };
-		F7AC9BD3262B0E9A0012B2CF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		F7C035642652CA4800CD0459 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		F7C30ADB262F615A00E4D5FE /* HomeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableCell.swift; sourceTree = "<group>"; };
-		F7C30B1C262F6CFE00E4D5FE /* HomeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionCell.swift; sourceTree = "<group>"; };
+		F796ADC126613CCB0095A63E /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		F796ADC526613CD00095A63E /* HomeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionCell.swift; sourceTree = "<group>"; };
+		F796ADC726613CD20095A63E /* HomeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableCell.swift; sourceTree = "<group>"; };
+		F796ADC926613CD30095A63E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F796ADCB26613CD60095A63E /* ListMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovies.swift; sourceTree = "<group>"; };
+		F796ADCF26613CDE0095A63E /* ServiceListMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListMovies.swift; sourceTree = "<group>"; };
+		F796ADD326613CE20095A63E /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		F796ADD526613CE40095A63E /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		F796ADD926613CEB0095A63E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F796ADDD26613CEF0095A63E /* ExtensionUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUtil.swift; sourceTree = "<group>"; };
+		F796ADE126613D300095A63E /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		FFFB92C91D989752AF6531C3 /* Pods-Plinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plinder.debug.xcconfig"; path = "Target Support Files/Pods-Plinder/Pods-Plinder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,26 +107,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		F713F62B25ADD82B0083F3D9 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				F7AC9BD2262B0E610012B2CF /* Home */,
-				F7360A6B25AF3B020085BB9A /* User */,
-				F713F63625ADF1860083F3D9 /* Tutorial */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		F713F63625ADF1860083F3D9 /* Tutorial */ = {
-			isa = PBXGroup;
-			children = (
-				F713F62E25ADD8E10083F3D9 /* TutorialViewController.swift */,
-				F713F63F25ADF2280083F3D9 /* PageCell.swift */,
-				F713F66325AE336A0083F3D9 /* Page.swift */,
-			);
-			path = Tutorial;
-			sourceTree = "<group>";
-		};
 		F72450FE24C73A1400D16BE4 = {
 			isa = PBXGroup;
 			children = (
@@ -153,7 +133,7 @@
 				F724512E24C73F3200D16BE4 /* Plinder.entitlements */,
 				F724513A24C7674500D16BE4 /* GoogleService-Info.plist */,
 				F724510A24C73A1400D16BE4 /* AppDelegate.swift */,
-				F713F62B25ADD82B0083F3D9 /* ViewControllers */,
+				F796ADE826613E480095A63E /* Controllers */,
 				F724512F24C7436000D16BE4 /* Supporting File */,
 				F7C0356C265313E200CD0459 /* Assets */,
 			);
@@ -177,50 +157,54 @@
 			path = "Supporting File";
 			sourceTree = "<group>";
 		};
-		F7360A6B25AF3B020085BB9A /* User */ = {
+		F796ADE826613E480095A63E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F7C035622652CA0C00CD0459 /* Singup */,
-				F7C035632652CA2800CD0459 /* Login */,
+				F796ADEC26613F2E0095A63E /* Authentication */,
+				F796ADEB26613ED90095A63E /* Tutorial */,
+				F796ADE926613E630095A63E /* Home */,
 			);
-			path = User;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		F796AD0D265FFA8D0095A63E /* ServiceHome */ = {
+		F796ADE926613E630095A63E /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				F796AD05265FF91D0095A63E /* ListMovies.swift */,
-				F796AD09265FF9D90095A63E /* ServiceListMovies.swift */,
+				F796ADC526613CD00095A63E /* HomeCollectionCell.swift */,
+				F796ADC726613CD20095A63E /* HomeTableCell.swift */,
+				F796ADC926613CD30095A63E /* HomeViewController.swift */,
+				F796ADEA26613E900095A63E /* MoviesServices */,
 			);
-			name = ServiceHome;
+			path = Home;
 			sourceTree = "<group>";
 		};
-		F7AC9BD2262B0E610012B2CF /* Home */ = {
+		F796ADEA26613E900095A63E /* MoviesServices */ = {
 			isa = PBXGroup;
 			children = (
-				F7AC9BD3262B0E9A0012B2CF /* HomeViewController.swift */,
-				F7C30ADB262F615A00E4D5FE /* HomeTableCell.swift */,
-				F7C30B1C262F6CFE00E4D5FE /* HomeCollectionCell.swift */,
-				F796AD0D265FFA8D0095A63E /* ServiceHome */,
+				F796ADCB26613CD60095A63E /* ListMovies.swift */,
+				F796ADCF26613CDE0095A63E /* ServiceListMovies.swift */,
 			);
-			name = Home;
+			path = MoviesServices;
 			sourceTree = "<group>";
 		};
-		F7C035622652CA0C00CD0459 /* Singup */ = {
+		F796ADEB26613ED90095A63E /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				F7360A6D25AF3B720085BB9A /* SignupViewController.swift */,
-				F78E423424CA037C00B13A71 /* ExtensionUtil.swift */,
+				F796ADC126613CCB0095A63E /* TutorialViewController.swift */,
+				F796ADD326613CE20095A63E /* Page.swift */,
+				F796ADD526613CE40095A63E /* PageCell.swift */,
 			);
-			path = Singup;
+			path = Tutorial;
 			sourceTree = "<group>";
 		};
-		F7C035632652CA2800CD0459 /* Login */ = {
+		F796ADEC26613F2E0095A63E /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				F7C035642652CA4800CD0459 /* LoginViewController.swift */,
+				F796ADD926613CEB0095A63E /* LoginViewController.swift */,
+				F796ADDD26613CEF0095A63E /* ExtensionUtil.swift */,
+				F796ADE126613D300095A63E /* SignupViewController.swift */,
 			);
-			path = Login;
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		F7C0356C265313E200CD0459 /* Assets */ = {
@@ -418,18 +402,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F713F66425AE336A0083F3D9 /* Page.swift in Sources */,
-				F7C30B1D262F6CFE00E4D5FE /* HomeCollectionCell.swift in Sources */,
-				F796AD0A265FF9D90095A63E /* ServiceListMovies.swift in Sources */,
-				F713F64025ADF2280083F3D9 /* PageCell.swift in Sources */,
-				F7C30ADC262F615A00E4D5FE /* HomeTableCell.swift in Sources */,
-				F78E423524CA037C00B13A71 /* ExtensionUtil.swift in Sources */,
-				F713F62F25ADD8E10083F3D9 /* TutorialViewController.swift in Sources */,
-				F7360A6E25AF3B720085BB9A /* SignupViewController.swift in Sources */,
-				F7AC9BD4262B0E9A0012B2CF /* HomeViewController.swift in Sources */,
+				F796ADCC26613CD60095A63E /* ListMovies.swift in Sources */,
+				F796ADD026613CDF0095A63E /* ServiceListMovies.swift in Sources */,
+				F796ADD426613CE20095A63E /* Page.swift in Sources */,
+				F796ADDE26613CEF0095A63E /* ExtensionUtil.swift in Sources */,
+				F796ADCA26613CD30095A63E /* HomeViewController.swift in Sources */,
+				F796ADC226613CCB0095A63E /* TutorialViewController.swift in Sources */,
+				F796ADE226613D300095A63E /* SignupViewController.swift in Sources */,
+				F796ADD626613CE40095A63E /* PageCell.swift in Sources */,
+				F796ADC626613CD00095A63E /* HomeCollectionCell.swift in Sources */,
 				F724510B24C73A1400D16BE4 /* AppDelegate.swift in Sources */,
-				F7C035652652CA4800CD0459 /* LoginViewController.swift in Sources */,
-				F796AD06265FF91D0095A63E /* ListMovies.swift in Sources */,
+				F796ADDA26613CEB0095A63E /* LoginViewController.swift in Sources */,
+				F796ADC826613CD20095A63E /* HomeTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
